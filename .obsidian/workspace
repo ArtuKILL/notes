@@ -1,0 +1,112 @@
+{
+  "main": {
+    "id": "08cba0be390d37de",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4905ae25e544d79",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Desarrollo/Primera clase.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c04e5e85497682fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "4303535038ec365f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad0f7aeb5482aced",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ae871e9cba7e3e0c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 238
+  },
+  "right": {
+    "id": "d84a77ed4fd8c0dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "14d3710f157eba1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c92f490a12726e4e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Desarrollo/Primera clase.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "07f210eb2d8108c7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "48b1ce983efdbf34",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "c4905ae25e544d79",
+  "lastOpenFiles": [
+    "Desarrollo/Primera clase.md",
+    "Pasted image 20220426192518.png",
+    "Sistemas distribuidos/Primera clase 1.md"
+  ]
+}
