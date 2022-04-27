@@ -5,6 +5,8 @@ Prof Carlos Alonzo
 Notas de la primera clase de desarrollo del software, si hay algún error pueden corregirlo 👍.
 Más que todo hay información del documento de apoyo de la clase y algúnos diagramas y notas que dio en clase.
 
+Este documento esta hecho para leerse con [obsidian](https://obsidian.md)
+
 ---
 ### Plan de clases
 - Estructurado

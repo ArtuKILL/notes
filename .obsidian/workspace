@@ -4,21 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "f374bf285a1020a0",
-        "type": "leaf",
-        "dimension": 43.139534883720934,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Desarrollo/Primera clase.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "de58ed4febed21e1",
         "type": "leaf",
-        "dimension": 56.860465116279066,
         "state": {
           "type": "markdown",
           "state": {
