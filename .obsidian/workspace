@@ -4,13 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "c4905ae25e544d79",
+        "id": "f374bf285a1020a0",
         "type": "leaf",
+        "dimension": 43.139534883720934,
         "state": {
           "type": "markdown",
           "state": {
             "file": "Desarrollo/Primera clase.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "de58ed4febed21e1",
+        "type": "leaf",
+        "dimension": 56.860465116279066,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Desarrollo/Primera clase.md",
+            "mode": "preview"
           }
         }
       }
@@ -52,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238
+    "width": 380
   },
   "right": {
     "id": "d84a77ed4fd8c0dc",
@@ -103,7 +116,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c4905ae25e544d79",
+  "active": "de58ed4febed21e1",
   "lastOpenFiles": [
     "Desarrollo/Primera clase.md",
     "Pasted image 20220426192518.png",

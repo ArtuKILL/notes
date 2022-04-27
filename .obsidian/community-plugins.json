@@ -1,6 +1,7 @@
 [
-  "obsidian-plantuml",
   "table-editor-obsidian",
   "calendar",
+  "obsidian-admonition",
+  "obsidian-plantuml",
   "obsidian-git"
 ]
