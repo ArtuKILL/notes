@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Desarrollo/Lecturas/Clean Architecture.md",
+            "file": "Readme.md",
             "mode": "source"
           }
         }
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 433
   },
   "right": {
     "id": "d84a77ed4fd8c0dc",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Desarrollo/Lecturas/Clean Architecture.md",
+                "file": "Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,13 +118,13 @@
   },
   "active": "92b8535fe17ceab5",
   "lastOpenFiles": [
+    "Readme.md",
+    "Untitled 2.md",
     "Desarrollo/Lecturas/Clean Architecture.md",
     "Sistemas distribuidos/Primera clase.md",
     "Pasted image 20220426083924.png",
     "Desarrollo/Clases/Primera Clase.md",
     "Desarrollo/Clases/Segunda Clase.md",
-    "Untitled.md",
-    "Untitled 2.md",
     "Untitled 1.md",
     "Desarrollo/Conferencias/Clean Code - Uncle Bob.md",
     "Pasted image 20220426192518.png"
