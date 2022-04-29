@@ -4,12 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "de58ed4febed21e1",
+        "id": "92b8535fe17ceab5",
         "type": "leaf",
+        "dimension": 41.84100418410041,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Desarrollo/Primera clase.md",
+            "file": "Desarrollo/Lecturas/Clean Architecture.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "ae7dd76b092fb252",
+        "type": "leaf",
+        "dimension": 58.15899581589959,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Desarrollo/Lecturas/Clean Architecture.md",
             "mode": "preview"
           }
         }
@@ -52,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 380
+    "width": 100
   },
   "right": {
     "id": "d84a77ed4fd8c0dc",
@@ -68,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Desarrollo/Primera clase.md",
+                "file": "Desarrollo/Lecturas/Clean Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,10 +116,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "de58ed4febed21e1",
+  "active": "92b8535fe17ceab5",
   "lastOpenFiles": [
-    "Desarrollo/Primera clase.md",
-    "Pasted image 20220426192518.png",
-    "Sistemas distribuidos/Primera clase 1.md"
+    "Desarrollo/Lecturas/Clean Architecture.md",
+    "Sistemas distribuidos/Primera clase.md",
+    "Pasted image 20220426083924.png",
+    "Desarrollo/Clases/Primera Clase.md",
+    "Desarrollo/Clases/Segunda Clase.md",
+    "Untitled.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "Desarrollo/Conferencias/Clean Code - Uncle Bob.md",
+    "Pasted image 20220426192518.png"
   ]
 }

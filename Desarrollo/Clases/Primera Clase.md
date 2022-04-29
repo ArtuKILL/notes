@@ -104,10 +104,13 @@ Palabras con su definición en el contexto
 - production composition root
 
 #### 3er Cita
-
+````ad-quote
+title: Cita
+*"“Flutter views represent the interface presented to the user. They provide interaction and allow the users to feel the essence of the application. Unfortunately, Flutter views are also often ignored, resulting in ==tightly coupled and non-reusable components==. In this article, I will discuss techniques that can help you construct more ==reusable== and ==loosely coupled views==.”"*
+```` 
 ---
 
-### Preguntas ¿?
+### PREGUNTAS ¿?
 ```` ad-question
 title: ¿Qué es un nivel de inderección?
 
@@ -201,3 +204,6 @@ PARCIAL
  
  
  	
+	
+### Names
+Grady Booch
