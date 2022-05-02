@@ -299,8 +299,59 @@ Ahora supon que D tiene una caracteristicas (*features*) que D F no usa y, antes
 ### Conclusión
 La lección aqui es que depender de algo que trae una "mochila" (*baggage*) que no necesitas puede causarte problemas que no esperabas.
 
-## Cap 11 - DIP  (Dependency Inversion Principle)
+## Cap 11 -DIP - Dependency Inversion Principle
 
 El principio de inversión de dependencias (DIP en inglés) nos dice que el sistema más flexible son esos en los cualas dependencias del código fuente se hacen referencia a solo abstracciones y no concretaciones (clases concretas)
 
-En los lenguajes de tipado estático, como Java,
+En los lenguajes de tipado estático, como java, las declaraciones de uso, importación e inclusión deben referirse solo a los módulos fuente que contienen interfaces, clases abstractas o algún otro tipo de declaración abstracta. No se debe depender de nada concentrado.
+
+La misma regla se aplica a los lenguajes de escritura dinámica, como Ruby y Python. Las dependencias del código fuente no deben hacer referencia a módulos concrentados. Sin embargo, en estos lenguajes es un poco más difícil definir qué es un módulo concrentrado. En particular, es cualquier módulo en el que se implementan las funciones que se están llamando.
+
+Claramente, tratar esta idea como una regla no es realista, porque los sistemas de software deben depender de muchas instalaciones concretas. Por ejemplo, la clase String en Java es concreta y sería poco realista tratar de forzarla a ser abstracta. La dependencia del código fuente en el java.lang.string concreto no puede y no debe evitarse.
+
+En comparación, la clase String es muy estable. Los cambios a esa clase son muy raros y están estrictamente controlados. Los programadores y arquitectos no tienen que preocuparse por cambios frecuentes y caprichosos en String.   Por estas razones, tendemos a ignorar los antecedentes estables del sistema operativo y las instalaciones de la plataforma cuando se trata de DIP. Toleramos esas dependencias concretas porque sabemos que podemos confiar en que no cambiarán.
+
+Son los elementos concretos volátiles de nuestro sistema de los que queremos evitar depender. Esos son los módulos que estamos desarrollando activamente y que están experimentando cambios frecuentes.
+
+### Stable Abstractions
+
+Cada cambio en una interfaz abstracta corresponde a un cambio en sus implementaciones concretas. Por el contrario, los cambios en implementaciones concretas no siempre, ni siquiera por lo general, requieren cambios en las interfaces que implementan. Por lo tanto, las interfaces son menos volátiles que las implementaciones.
+
+De hecho, los buenos diseñadores y arquitectos de software trabajan duro para reducir la volatilidad de las interfaces. Intentan encontrar formas de agregar funcionalidad a las implementaciones sin realizar cambios en las interfaces. Esto es **Diseño de Software 101**.
+
+La implicación, entonces, es que las arquitecturas de software estables son aquellas que evitan depender de concreciones volátiles y que favorecen el uso de interfaces abstractas estables. Esta implicación se reduce a un conjunto de **prácticas de codificación muy específicas:**
+
+• No se refiera a clases concretas volátiles. Consulte las interfaces abstractas en su lugar. Esta regla se aplica en todos los idiomas, ya sea de tipo estático o dinámico. También impone severas restricciones a la creación de objetos y, en general, impone el uso de Abstract Factories.
+
+• No derivar de clases concretas volátiles. Este es un corolario de la regla anterior, pero merece una mención especial. En los lenguajes tipificados estáticamente, la herencia es la más sólida y rígida de todas las relaciones del código fuente; en consecuencia, debe usarse con mucho cuidado. En los lenguajes tipificados dinámicamente, la herencia es un problema menor, pero sigue siendo una dependencia, y la precaución es siempre la opción más inteligente.
+
+• No anule funciones concretas. Las funciones concretas a menudo requieren dependencias del código fuente. Cuando anula esas funciones, no elimina esas dependencias; de hecho, las hereda. Para administrar esas dependencias, debe hacer que la función sea abstracta y crear múltiples implementaciones.
+
+• Nunca menciones el nombre de algo concreto y volátil. Esto es realmente solo una reafirmación del principio mismo.
+
+### Factories
+
+Para cumplir con estas reglas, la creación de objetos concretos volátiles requiere un manejo especial. Esta precaución está garantizada porque, prácticamente todos los lenguajes, la creación de un objeto requiere una dependencia del código fuente en la definición concreta de ese objeto.
+
+En la mayoría de los lenguajes orientados a objetos, como Java, usaríamos una fábrica abstracta para administrar esta dependencia no deseada.
+
+La Aplicación utiliza el ConcreteImpl a través de la interfaz del Servicio. Sin embargo, la aplicación debe crear instancias de ConcreteImpl de alguna manera. Para lograr esto sin crear una dependencia de código fuente en ConcreteImpl, la aplicación llama al método makeSvc de la interfaz ServiceFactory. Este método lo implementa la clase ServiceFactoryImpl, que se deriva de ServiceFactory. Esa implementación crea una instancia de ConcreteImpl y lo devuelve como un servicio.
+
+![[Pasted image 20220502182107.png]]
+(Uso del patrón Abstract Factory para gestionar la dependencia.)
+
+**La línea curva** es un límite arquitectónico. Separa lo abstracto de lo concreto. Todas las dependencias del código fuente cruzan esa línea curva que apunta en la misma dirección, hacia el lado abstracto.
+
+**La línea curva** divide el sistema en dos componentes: uno abstracto y otro concreto. El componente abstracto contiene todas las reglas comerciales de alto nivel de la aplicación. El componente concreto contiene todos los detalles de implementación que manipulan esas reglas comerciales.
+
+Tenga en cuenta que el flujo de control cruza la línea curva en dirección opuesta a las dependencias del código fuente. Las dependencias del código fuente se invierten contra el flujo de control, razón por la cual nos referimos a este **principio como inversión de dependencia.**
+
+###  Concrete Components
+
+El componente concreto de la imagen anterior, contiene una sola dependencia, por lo que viola el DIP. Esto es típico. Las violaciones de DIP no se pueden eliminar por completo, pero se pueden reunir en una pequeña cantidad de componentes concretos y mantenerlos separados del resto del sistema
+
+La mayoría de los sistemas contendrán al menos uno de esos componentes concretos, a menudo llamado main porque contiene la función main1. En el caso ilustrado en la imagen anterior, la función principal crearía una instancia de ServiceFactoryImpl y colocaría esa instancia en una variable global de tipo ServiceFactory. La aplicación luego accedería a la fábrica a través de esa variable global..
+
+### Conclusion
+
+A medida que avanzamos en este libro y cubrimos principios arquitectónicos de alto nivel, el DIP aparecerá una y otra vez. Será el principio organizador más visible en nuestros diagramas de arquitectura. **La línea curva** se convertirá en los límites arquitectónicos en capítulos posteriores. La forma en que las dependencias cruzan esa línea curva en una dirección, y hacia entidades más abstractas, se convertirá en una nueva regla que llamaremos Regla de Dependencia.
