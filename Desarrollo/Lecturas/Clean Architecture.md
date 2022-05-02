@@ -256,15 +256,17 @@ User1 --> U1Ops
 User2 --> U2Ops
 User3 --> U3Ops
 
-/'
+
 U1Ops <|.. OPS
 U2Ops <|.. OPS
 U3Ops <|.. OPS
-'/
 
+/'
 U1Ops <|-- OPS
 U2Ops <|-- OPS
 U3Ops <|-- OPS
+'/
+
 ```
 
 ### ISP y el Lenguaje
@@ -297,8 +299,8 @@ Ahora supon que D tiene una caracteristicas (*features*) que D F no usa y, antes
 ### Conclusión
 La lección aqui es que depender de algo que trae una "mochila" (*baggage*) que no necesitas puede causarte problemas que no esperabas.
 
-## DIP - Dependency Inversion Principle
+## Cap 11 - DIP  (Dependency Inversion Principle)
 
 El principio de inversión de dependencias (DIP en inglés) nos dice que el sistema más flexible son esos en los cualas dependencias del código fuente se hacen referencia a solo abstracciones y no concretaciones (clases concretas)
 
-En los lenguajes de tipado estático
+En los lenguajes de tipado estático, como Java,
