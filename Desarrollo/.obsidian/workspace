@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Clases/Primera Clase.md",
+            "file": "Lecturas/Clean Architecture.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clases/Primera Clase.md",
+                "file": "Lecturas/Clean Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,10 +96,11 @@
   },
   "active": "865e2c9f6984e63a",
   "lastOpenFiles": [
-    "Clases/Primera Clase.md",
-    "Clases/Segunda Clase.md",
-    "Pasted image 20220426192410.png.md",
     "Lecturas/Clean Architecture.md",
+    "Clases/Segunda Clase.md",
+    "Pasted image 20220502154003.png",
+    "Clases/Primera Clase.md",
+    "Pasted image 20220426192410.png.md",
     "Conferencias/Clean Code - Uncle Bob.md"
   ]
 }
