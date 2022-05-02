@@ -6,4 +6,4 @@ Plugins de obsidian que se utilizan:
 - [Obsidian Git](https://obsidian.md/plugins?id=obsidian-git)
 - [PlantUML](https://obsidian.md/plugins?id=obsidian-plantuml)
 
-Si ven algún error o algo corrigelo y haz PR ;)
+Si ven algún error o algo corrigelo forkea y haz PR ;)
