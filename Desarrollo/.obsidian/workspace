@@ -1,0 +1,105 @@
+{
+  "main": {
+    "id": "aa6ed525f3b52d30",
+    "type": "split",
+    "children": [
+      {
+        "id": "865e2c9f6984e63a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Clases/Primera Clase.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "25369d58d516872f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0647662afe955a50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9b05093439d62e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "25cd62fca7e7dd31",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ff563dfe951df272",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a1c600a4313a7f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df5f82ac5fc896cf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Clases/Primera Clase.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "029c3d875e663c9c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "865e2c9f6984e63a",
+  "lastOpenFiles": [
+    "Clases/Primera Clase.md",
+    "Clases/Segunda Clase.md",
+    "Pasted image 20220426192410.png.md",
+    "Lecturas/Clean Architecture.md",
+    "Conferencias/Clean Code - Uncle Bob.md"
+  ]
+}

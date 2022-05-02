@@ -72,7 +72,7 @@ Detalles de implementación
 
 #### OCP: 
 - Abierto para <ins>extesión</ins> : Agregarle funcionalidades
-- Cerradi para la <ins>modificación</ins>: Modificar el código que existe
+- Cerrado para la <ins>modificación</ins>: Modificar el código que existe
 - ==Refactorizar ⭐==
 
 ```plantuml
