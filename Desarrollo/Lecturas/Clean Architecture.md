@@ -350,8 +350,10 @@ Tenga en cuenta que el ==flujo de control== cruza la línea curva en dirección 
 
 El componente concreto de la imagen anterior, contiene una sola dependencia, por lo que viola el DIP. Esto es típico. Las violaciones de DIP no se pueden eliminar por completo, pero se pueden reunir en una pequeña cantidad de componentes concretos y mantenerlos separados del resto del sistema
 
-La mayoría de los sistemas contendrán al menos uno de esos componentes concretos, a menudo llamado main porque contiene la función main1. En el caso ilustrado en la imagen anterior, la función principal crearía una instancia de `ServiceFactoryImpl` y colocaría esa instancia en una variable global de tipo `ServiceFactory`. La aplicación luego accedería a la fábrica (*Factory*) a través de esa variable global.
+La mayoría de los sistemas contendrán al menos uno de esos componentes concretos, a menudo llamado `main` porque contiene la función `main` <sup>1</sup>. En el caso ilustrado en la imagen anterior, la función `main` crearía una instancia de `ServiceFactoryImpl` y colocaría esa instancia en una variable global de tipo `ServiceFactory`. La aplicación luego accedería a la fábrica (*Factory*) a través de esa variable global.
 
+---
+<sub>1. In other words, the function that is invoked by the operating system when the application is first started up</sub>
 ### Conclusion
 
 A medida que avanzamos en este libro y cubrimos principios arquitectónicos de alto nivel, el DIP aparecerá una y otra vez. Será el principio organizador más visible en nuestros diagramas de arquitectura. **La línea curva** se convertirá en los límites arquitectónicos en capítulos posteriores. La forma en que las dependencias cruzan esa línea curva en una dirección, y hacia entidades más abstractas, se convertirá en una nueva regla que llamaremos Regla de Dependencia.

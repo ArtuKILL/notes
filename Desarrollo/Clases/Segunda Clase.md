@@ -95,11 +95,6 @@ Algoritmo para calcular el porcentage de credibilidad (indice de credibildiad)
 		- IndiceDeCredibilidad
 		- calcularCredibilidad()
 	}
-
-	class B as " "{
-		
-	}
-	Doctor *-- B
 	
 ```
  
