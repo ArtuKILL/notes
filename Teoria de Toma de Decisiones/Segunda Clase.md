@@ -1,6 +1,8 @@
 ## Teoría de Toma de Decisiones - 06/05/2022
 Prof Jose Luis Quintero
 
+![[Recording 20220506115237.webm]]
+
 
 ### 6 - Ambientes en la toma de deciones
  - Bajo Certeza 
@@ -168,12 +170,11 @@ Gana quien tenga menor distancia
 ````
 
 **Anti-ideal:**
-|     | T1      | T2      | T3  | AntiIdeal | 
-| --- | ------- | ------- | --- | --------- |
-| A1  | ==130== | 105     | 117 | 130       |
-| A
-![[Recording 20220506115237.webm]]
- | 515     | 500     | 518 | 518       |
+
+|     | T1      | T2  | T3  | AntiIdeal |
+| --- | ------- | --- | --- | --------- |
+| A1  | ==130== | 105 | 117 | 130       |
+| A   | 515     | 500 | 518 | 518       |
 
 ### Proyecto
 
@@ -181,3 +182,4 @@ Gana quien tenga menor distancia
 2. Identificar los elementos de la toma de deciosiones (decisor, alternativa... )
 3. Tema de la secretarias con un amigo que tiene 3 instituciones, decidir institución.
 4. Costo, modelo (atributos), asumiedo que tienen igual importancia determinar el proceso de jerarquía.
+
